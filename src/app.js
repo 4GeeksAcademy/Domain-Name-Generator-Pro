@@ -7,10 +7,10 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  let pronouns = ["the", "our", "tiger"];
-  let adjs = ["great", "big", "fast"];
-  let nouns = ["jogger", "racoon", "boots"];
-  let ends = [".com", ".net", ".edu", ".fr", ".ca", ".org"];
+  let pronouns = ["the", "our", "lion"];
+  let adjs = ["great", "big", "fast", "tall"];
+  let nouns = ["jogger", "racoon", "boots", "village"];
+  let ends = [".com", ".net", ".edu", ".fr", ".ca", ".org", ".gov", ".ht"];
 
   let domainGen = [];
   for (let pronoun of pronouns) {
@@ -23,14 +23,10 @@ window.onload = function() {
     }
   }
 
-  //
-
-  let domainGen2 = [];
-  //domainGen2 = domainGen.join("");
-  //document.querySelector(".bodyDom").innerHTML = domainGen2;
-
-  document.querySelector(".bodyDom").innerHTML = `<ol>${domainGen.map(
-    domainGen => `
+  document.querySelector(".bodyDom").innerHTML = `<ol>${domainGen
+    .map(
+      domainGen => `
 <li>${domainGen}</li>`
-  )}</ol>`;
+    )
+    .join(" ")}</ol>`;
 };

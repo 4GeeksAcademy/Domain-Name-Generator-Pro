@@ -1,16 +1,22 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 .bodyDom {
-  padding-top: 50px;
-  margin-left: 650px;
+  display: flex;
+  padding-top: 3.125rem;
+  margin-left: 40.625rem;
+  margin-right: 40.625rem;
 }
 #nav {
   position: fixed;
-  margin-top: 0px;
+  margin-top: 0rem;
   background: rgb(204, 249, 249);
 }
 
 #image {
-  width: 25px;
-  height: 25px;
+  width: 1.563rem;
+  height: 1.563rem;
   background: none;
+}
+.titleText {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: blue;
 }
